@@ -18,8 +18,8 @@ We used [Express](https://expressjs.com/) to execute **requests** to the APIs.
 
 We decided to use SHA3 512, to avoid saving and transmitting the password relating to the username in plain text.
 
-## Username server
-We built a login server using **Node.js** and **Express** which allows you to use your username and password to play.
+### Username Microservice
+We built a login service using **Node.js** and **Express** which allows you to use your username and password to play. You interface via API and in turn the service interfaces with a SQL db containing the required username and password.
 
 
 ## How to run
