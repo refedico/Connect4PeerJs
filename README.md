@@ -1,6 +1,6 @@
 # Connect4 PeerJs
-### Chat and play with friends ~.
-This project is currently being developed for the **Tecnologie Internet** course [@Università di Parma](https://www.unipr.it). We're using **PeerJS** and **React** to build a Connect4 game based on WebRTC. 
+### Chat and play with friends
+The project was developed for the course of **Tecnologie Internet** course [@Università di Parma](https://www.unipr.it). We're using **PeerJS** and **React** to build a Connect4 game based on WebRTC. 
 
 ### PeerJS
 
