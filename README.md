@@ -26,14 +26,7 @@ We built a login service using **Node.js** and **Express** which allows you to u
 
 Clone the repository, and install the npm modules like you always do:
 
-### `npm install`
+## `npm install`
 
-You can then run
+## `npm start`
 
-### `npm start`
-
-To run the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
