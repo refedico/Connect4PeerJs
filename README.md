@@ -26,7 +26,7 @@ We built a login service using **Node.js** and **Express** which allows you to u
 
 Clone the repository, and install the npm modules like you always do:
 
-## `npm install`
+#### `npm install`
 
-## `npm start`
+#### `npm start`
 
