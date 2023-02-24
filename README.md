@@ -2,40 +2,25 @@
 ### Chat and play with friends ~.
 This project is currently being developed for the **Tecnologie Internet** course [@Università di Parma](https://www.unipr.it). We're using **PeerJS** and **React** to build a Connect4 game based on WebRTC. 
 
-## Main features
-
-We developed the web app with **performance**, **security** and **responsiveness** in mind. It is strictly tied to the PeerJS APIs, which we use to make videocalls, send text messages, and ping the peers. Let's have a quick overview over the components that were required to build the app.
-
 ### PeerJS
 
-When a user logs in, we generate a peer through the official PeerServer. We then tie its ID to a username in our [login server](#Username-server), so that other users can search him **by his username, not his Peer ID**. This enables us to establish **multi-session chats**: once a user has a chat open with a friend, the ID is **automatically updated** by the login server. 
+We used PeerJs that wraps the browser's WebRTC implementation to provide a complete, configurable, and easy-to-use peer-to-peer connection API. Equipped with nothing but an ID, a peer can create a P2P data or media stream connection to a remote peer.
 
 ### User interface
 
-We used the beautiful [Material-UI](https://material-ui.com/) components to **build our UI**. The library contains most of the UI components a developer will ever need, including **grids**, **TextFields**, **themes**, **buttons**. Not to mention it is also **blazingly fast!**
-
-### react-chat-elements
-
-Some components of the UI were obviously missing from Material-UI. [react-chat-elements](https://github.com/Detaysoft/react-chat-elements) contains what we needed. We used this library to get **message boxes and chat lists**. 
-
+We used the beautiful [React-Boostrap](https://react-bootstrap.github.io/) components to **build our UI**. The library contains most of the UI components a developer will ever need.
+ 
 ### Requests to the REST API
 
-We used [Axios](https://www.npmjs.com/package/axios) to execute **async requests** to the APIs. 
+We used [Express](https://expressjs.com/) to execute **requests** to the APIs. 
 
 ### Password hashing
 
-We decided to use SHA, a universally trusted hashing algorithm, available through a [lightweight npm module](https://www.npmjs.com/package/bcrypt).
-
-### Persistency
-
-No one wants to lose its chats when closing a web app. We decided to save chats data in the local storage, enabling a user to just enter the password and login. Beware: the chats are **not encrypted**, so use **Incognito Mode** if you're working on a public workstation. 
+We decided to use SHA3 512, to avoid saving and transmitting the password relating to the username in plain text.
 
 ## Username server
-We built a login server using **Node.js** and **Express** which tracks associations between peer.js IDs and our usernames. You can find it [here](https://github.com/simmontali/usernameServer). 
+We built a login server using **Node.js** and **Express** which allows you to use your username and password to play.
 
-## Course notes
-
-You can find the course notes [here.](https://github.com/simmontali/internetnotes)
 
 ## How to run
 
